@@ -57,6 +57,7 @@ public final class TopBarFloatingPopUp: RoundedWithShadowView {
         label.textAlignment = .left
         label.text = text
         label.font = TopBarFloatingPopUpAppereance.shared.font
+        label.textColor = TopBarFloatingPopUpAppereance.shared.textColor
         label.numberOfLines = 0
     }
     
