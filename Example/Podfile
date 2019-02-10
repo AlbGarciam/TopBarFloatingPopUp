@@ -1,0 +1,6 @@
+use_frameworks!
+target 'TopBarFloatingPopUp_Tests' do
+  pod 'TopBarFloatingPopUp', :path => '../'
+  
+  
+end
