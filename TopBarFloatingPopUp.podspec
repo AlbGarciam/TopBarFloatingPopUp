@@ -19,10 +19,10 @@ Pod::Spec.new do |s|
 
   s.description      = 'Custom PopUp that can be used to display errors or tooltips to the user.'
 
-  s.homepage         = 'https://github.com/AlbGarciam/TopBarFloatingPopUp'
+  s.homepage         = 'https://github.com/AlbGarciam/TopBarFloatingPopUp.git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'alb.garciam@gmail.com' => 'alb.garciam@gmail.com' }
-  s.source           = { :git => 'https://github.com/alb.garciam@gmail.com/TopBarFloatingPopUp.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/AlbGarciam/TopBarFloatingPopUp.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '10.0'
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.2' }
