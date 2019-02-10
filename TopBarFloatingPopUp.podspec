@@ -25,6 +25,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/AlbGarciam/TopBarFloatingPopUp.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '10.0'
+  s.swift_version = '4.2'
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.2' }
 
   s.source_files = 'TopBarFloatingPopUp/Classes/**/*'
