@@ -1,0 +1,16 @@
+PODS:
+  - TopBarFloatingPopUp (0.1.0)
+
+DEPENDENCIES:
+  - TopBarFloatingPopUp (from `../`)
+
+EXTERNAL SOURCES:
+  TopBarFloatingPopUp:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TopBarFloatingPopUp: a52e645a8967a32aae6fc8808e3ac1cd9ccf69ac
+
+PODFILE CHECKSUM: 7df129cea62dc66e1919b37eb7831254f68f9102
+
+COCOAPODS: 1.5.3

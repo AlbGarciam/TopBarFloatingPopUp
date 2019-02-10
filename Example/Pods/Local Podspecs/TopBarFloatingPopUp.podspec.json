@@ -1,0 +1,25 @@
+{
+  "name": "TopBarFloatingPopUp",
+  "version": "0.1.0",
+  "summary": "Custom pop up to provide information to the user",
+  "description": "Custom PopUp that can be used to display errors or tooltips to the user.",
+  "homepage": "https://github.com/AlbGarciam/TopBarFloatingPopUp",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "alb.garciam@gmail.com": "alb.garciam@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/alb.garciam@gmail.com/TopBarFloatingPopUp.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "pod_target_xcconfig": {
+    "SWIFT_VERSION": "4.2"
+  },
+  "source_files": "TopBarFloatingPopUp/Classes/**/*"
+}

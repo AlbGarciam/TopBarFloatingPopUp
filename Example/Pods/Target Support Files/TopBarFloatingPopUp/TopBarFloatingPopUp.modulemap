@@ -1,0 +1,6 @@
+framework module TopBarFloatingPopUp {
+  umbrella header "TopBarFloatingPopUp-umbrella.h"
+
+  export *
+  module * { export * }
+}

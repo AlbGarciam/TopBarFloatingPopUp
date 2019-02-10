@@ -1,5 +1,5 @@
 use_frameworks!
-target 'TopBarFloatingPopUp_Tests' do
+target 'Example' do
   pod 'TopBarFloatingPopUp', :path => '../'
   
   
