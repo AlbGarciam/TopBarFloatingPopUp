@@ -1,6 +1,5 @@
 # TopBarFloatingPopUp
 
-[![CI Status](https://img.shields.io/travis/alb.garciam@gmail.com/TopBarFloatingPopUp.svg?style=flat)](https://travis-ci.org/alb.garciam@gmail.com/TopBarFloatingPopUp)
 [![Version](https://img.shields.io/cocoapods/v/TopBarFloatingPopUp.svg?style=flat)](https://cocoapods.org/pods/TopBarFloatingPopUp)
 [![License](https://img.shields.io/cocoapods/l/TopBarFloatingPopUp.svg?style=flat)](https://cocoapods.org/pods/TopBarFloatingPopUp)
 [![Platform](https://img.shields.io/cocoapods/p/TopBarFloatingPopUp.svg?style=flat)](https://cocoapods.org/pods/TopBarFloatingPopUp)
@@ -10,6 +9,8 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+* iOS 10.0+
+* Swift 4.2
 
 ## Installation
 
@@ -22,8 +23,9 @@ pod 'TopBarFloatingPopUp'
 
 ## Author
 
-alb.garciam@gmail.com, alb.garciam@gmail.com
+**Alberto Garcia** - *Initial work* - [AlbGarciam](https://github.com/AlbGarciam)
 
 ## License
 
-TopBarFloatingPopUp is available under the MIT license. See the LICENSE file for more info.
+AnimatedTabBar is available under the MIT license. See the LICENSE file for more info.
+
