@@ -9,10 +9,10 @@
 import UIKit
 
 public class TopBarFloatingPopUpAppereance {
-    static let shared: TopBarFloatingPopUpAppereance = TopBarFloatingPopUpAppereance()
+    public static let shared: TopBarFloatingPopUpAppereance = TopBarFloatingPopUpAppereance()
     private init() {}
     
-    var font: UIFont = .systemFont(ofSize: 14)
-    var textColor: UIColor = .black
-    var animationDuration : TimeInterval = 0.75
+    public var font: UIFont = .systemFont(ofSize: 14)
+    public var textColor: UIColor = .black
+    public var animationDuration : TimeInterval = 0.75
 }
