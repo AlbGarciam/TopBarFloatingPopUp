@@ -27,6 +27,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '10.0'
   s.swift_version = '4.2'
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.2' }
+  s.exclude_files = "Constrictor/Constrictor/*.plist"
 
   s.source_files = 'TopBarFloatingPopUp/Classes/**/*'
   

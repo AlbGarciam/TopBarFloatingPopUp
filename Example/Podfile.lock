@@ -1,5 +1,5 @@
 PODS:
-  - TopBarFloatingPopUp (0.1.0)
+  - TopBarFloatingPopUp (0.1.2)
 
 DEPENDENCIES:
   - TopBarFloatingPopUp (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  TopBarFloatingPopUp: a52e645a8967a32aae6fc8808e3ac1cd9ccf69ac
+  TopBarFloatingPopUp: 98872a78445758ffd0a83d53f4470981ce89a31c
 
 PODFILE CHECKSUM: 7df129cea62dc66e1919b37eb7831254f68f9102
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.0
