@@ -85,7 +85,7 @@ public final class TopBarFloatingPopUp: RoundedWithShadowView {
         centerXAnchor.constraint(equalTo: superview.centerXAnchor, constant: 0).isActive = true
         widthAnchor.constraint(lessThanOrEqualToConstant: 400).isActive = true
         
-        bottomConstraint = bottomAnchor.constraint(equalTo: superview.layoutMarginsGuide.topAnchor, constant: -30)
+        bottomConstraint = bottomAnchor.constraint(equalTo: superview.topAnchor, constant: -10)
         bottomConstraint?.priority = UILayoutPriority(999)
         bottomConstraint?.isActive = true
         
