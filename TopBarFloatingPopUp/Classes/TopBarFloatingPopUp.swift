@@ -12,8 +12,8 @@ import UIKit
  Model which is used to create the pop up
  
  - Parameters:
-    - text: Text to be displayed
-    - iconImage: Left icon to be displayed
+ - text: Text to be displayed
+ - iconImage: Left icon to be displayed
  */
 public typealias TopBarFloatingPopUpModel = (text: String, iconImage: UIImage?)
 
@@ -22,7 +22,7 @@ public final class TopBarFloatingPopUp: RoundedWithShadowView {
     
     //MARK: Attributes
     public let leftIcon: UIImageView = UIImageView()
-    public let label: UILabel = UILabel()
+    public let label: UILabel = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: .max))
     public internal(set) var animationDuration: TimeInterval = 0.65
     
     public weak var delegate: TopBarFloatingPopUpDelegate?
@@ -58,6 +58,7 @@ public final class TopBarFloatingPopUp: RoundedWithShadowView {
         label.text = text
         label.font = TopBarFloatingPopUpAppereance.shared.font
         label.textColor = TopBarFloatingPopUpAppereance.shared.textColor
+        label.lineBreakMode = .byWordWrapping
         label.numberOfLines = 0
     }
     
@@ -96,7 +97,7 @@ public final class TopBarFloatingPopUp: RoundedWithShadowView {
     
     //MARK: Display
     /**
-        Shows the popup with an animation with damping
+     Shows the popup with an animation with damping
      */
     public func showPopUp() {
         superview?.layoutIfNeeded()
@@ -143,15 +144,23 @@ public final class TopBarFloatingPopUp: RoundedWithShadowView {
     }
     
     private func addLabelConstraints() {
+        let height = requiredHeight()
         label.leadingAnchor.constraint(equalTo: leftIcon.trailingAnchor, constant: 13).isActive = true
         label.centerYAnchor.constraint(equalTo: leftIcon.centerYAnchor, constant: 0).isActive = true
         label.topAnchor.constraint(greaterThanOrEqualTo: topAnchor, constant: 13).isActive = true
         label.bottomAnchor.constraint(greaterThanOrEqualTo: topAnchor, constant: -13).isActive = true
         // Right
         label.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -13).isActive = true
-        let heightValue = (label.text?.size(withAttributes:
-            [NSAttributedString.Key.font: TopBarFloatingPopUpAppereance.shared.font]) ?? .zero).height
-        label.heightAnchor.constraint(equalToConstant: heightValue).isActive = true
+        label.heightAnchor.constraint(equalToConstant: height).isActive = true
+    }
+    
+    private func requiredHeight() -> CGFloat {
+        label.numberOfLines = 0
+        label.lineBreakMode = .byWordWrapping
+        label.font = self.label.font
+        label.text = self.label.text ?? ""
+        label.sizeToFit()
+        return label.frame.height
     }
     
     private func addViewConstraints() {
