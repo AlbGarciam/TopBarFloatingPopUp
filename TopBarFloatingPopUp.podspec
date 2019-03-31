@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TopBarFloatingPopUp'
-  s.version          = '0.1.4'
+  s.version          = '0.1.5'
   s.summary          = 'Custom pop up to provide information to the user'
 
 # This description is used to generate tags and improve search results.
@@ -25,8 +25,8 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/AlbGarciam/TopBarFloatingPopUp.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '10.0'
-  s.swift_version = '4.2'
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.2' }
+  s.swift_version = '5.0'
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '5.0' }
   s.exclude_files = "Constrictor/Constrictor/*.plist"
 
   s.source_files = 'TopBarFloatingPopUp/Classes/**/*'
