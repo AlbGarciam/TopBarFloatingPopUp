@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TopBarFloatingPopUp'
-  s.version          = '0.1.5'
+  s.version          = '0.1.5-Develop'
   s.summary          = 'Custom pop up to provide information to the user'
 
 # This description is used to generate tags and improve search results.
